@@ -3,6 +3,8 @@ import Main from './components/Main';
 import Basket from './components/Basket';
 import data from './data';
 import { useState } from 'react';
+import Footer from './components/Footer';
+
 function App() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
@@ -41,6 +43,7 @@ function App() {
           onRemove={onRemove}
         ></Basket>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

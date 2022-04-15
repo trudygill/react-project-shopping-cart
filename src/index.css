@@ -209,7 +209,6 @@ button.remove:hover{
   flex: 1;
 }
 
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -234,6 +233,21 @@ strong {
   flex-direction: column;
 }
 
+/*Footer Styling*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+div.text-small {
+  font-size: 0.8rem;
+}
+
+/*Responsive Styling*/
 @media screen and (max-width: 479px) {
   .container {
     display: flex;
@@ -263,4 +277,3 @@ strong {
     font-size: 0.8rem;
   }  
 }
-  
