@@ -43,7 +43,9 @@ function App() {
           onRemove={onRemove}
         ></Basket>
       </div>
-      <Footer></Footer>
+      <div>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

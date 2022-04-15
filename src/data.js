@@ -2,8 +2,8 @@ const data = {
     products:[
         {
             id:"1",
-            img:"./pics/double.jpg",
-            title:"Gold Layered Pendant",
+            img:"./pics/goldplated.jpg",
+            title:"Gold Plated Earrings",
             price: 45          
         },         
         {
@@ -53,7 +53,13 @@ const data = {
             img:"./pics/moon.jpg",
             title:"Triple Layered Necklace",
             price: 65          
-        }       
+        },
+        {
+            id:"10",
+            img:"./pics/5pcring.jpg",
+            title:"5pc Gold Ring Set",
+            price: 65          
+        }        
           
     ]
 };

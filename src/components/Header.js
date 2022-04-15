@@ -5,7 +5,7 @@ export default function Header(props) {
     <header className="navbar">
 
       <div>
-          <h1 className="logo">Zoié Jewelers</h1>
+          <h1 className="logo">Zoié</h1>
       </div>
 
       <div>
