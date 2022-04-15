@@ -3,9 +3,9 @@ import React from 'react';
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
-  const taxPrice = itemsPrice * 0.14;
-  const shippingPrice = itemsPrice > 2000 ? 0 : 20;
-  const totalPrice = itemsPrice + taxPrice + shippingPrice;
+  const discountPrice = itemsPrice < 250 ? 0 : itemsPrice * 0.05;
+  const shippingPrice = itemsPrice > 500 ?  0 : 2.99;
+  const totalPrice = itemsPrice + discountPrice + shippingPrice;
   return (
     <aside className="right-column right">
       <h3>Cart Summary</h3>
@@ -37,15 +37,16 @@ export default function Basket(props) {
               <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
             </div>
             <div className="row">
-              <div className="col-2">Tax</div>
-              <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
-            </div>
+              <div className="col-2">Discount</div>
+              <div className="col-1 text-right">${discountPrice.toFixed(2)}</div>
+            </div>            
             <div className="row">
               <div className="col-2">Shipping</div>
               <div className="col-1 text-right">
                 ${shippingPrice.toFixed(2)}
               </div>
             </div>
+            
 
             <div className="row">
               <div className="col-2">
