@@ -1,0 +1,266 @@
+/*Fonts Imported from Google*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/*Container Styling*/
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Header Styling*/
+.navbar {
+  border: 2px solid #121212;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  /* font-family: 'Cardo', serif; */
+  font-size: 1.6rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+.logo:hover {
+  border-bottom: solid #121212;
+}
+a.cart {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  border: 2px solid #121212;
+  background: #121212;
+  transition: 0.1s ease-in;
+  position:relative;
+}
+a.cart:hover {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border: 2px solid #121212;
+  background: #fff;
+}
+button.badge {
+  position: absolute;
+  top: -10px;
+  right:-10px;
+  width: 30px;
+  background-color: #121212;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 1.5rem;
+}
+
+/*Main Component Styling*/
+.img-container {
+  padding-top: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+img.small {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+p {
+  /* font-size: 0.8rem; */
+  font-weight: 400;
+  color: grey;
+}
+.product-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.4rem; 
+  margin: 0.3rem;
+}
+button.buy {
+  padding: 0.2rem;
+  background: #fff; 
+  border: 0.1rem solid #121212;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  background: #121212;
+}
+
+button.buy:hover {
+  color: #121212;
+  border: 0.1rem solid #121212; 
+  background: #fff;
+  
+}
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border: 0.2rem solid #121212;
+  padding: 1rem;
+  margin: 0.5rem;
+  line-height: 1.2rem;
+
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*Basket Component Styling*/
+.right-column {
+  flex: 1;
+  background-color: antiquewhite;
+  flex-direction: column;
+  border: 0.2rem solid #121212;
+  padding: 1rem;
+  margin: 0.5rem;
+  line-height: 2rem;
+
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 0.1rem solid #121212;
+}
+
+button.checkout {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  border: 2px solid #121212;
+  background: #121212;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.1s ease-in;
+}
+button.checkout:hover {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border: 2px solid #121212;
+  background: #fff;
+}
+button.add {
+  color: #fff;
+  padding: 0.2rem;
+  border: 0.1rem solid #121212;
+  background: #121212;
+  width: 25%;
+  cursor: pointer;
+}
+button.add:hover{
+ transform: scale(1.1);
+}
+button.remove {
+  color: #121212;
+  padding: 0.2rem;
+  border: 0.1rem solid #121212;
+  background: #fff;
+  width: 25%;
+  cursor: pointer;  
+}
+button.remove:hover{
+  transform: scale(1.1);
+ }
+
+/*CART ITEMS*/
+.empty-cart{
+  font-size: 0.85rem;
+  padding-top: 0.2rem;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  flex:2;
+}
+.middle{
+  flex: 1;
+}
+.right{
+  flex: 1;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+ .row.center {
+  align-items: stretch;
+} 
+
+.text-right {
+  text-align: right;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+.border {
+  border: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+  }
+  .product-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.4rem; 
+    margin: 0.3rem;
+  }  
+   .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 0.8rem;
+  }  
+}
+  
